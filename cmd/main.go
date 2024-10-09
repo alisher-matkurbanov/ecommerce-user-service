@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/alisher-matkurbanov/ecommerce-user-service/internal/config"
 	"github.com/alisher-matkurbanov/ecommerce-user-service/internal/controllers/http"
-	"github.com/alisher-matkurbanov/ecommerce-user-service/internal/infra"
+	"github.com/alisher-matkurbanov/ecommerce-user-service/internal/instruments"
 	"github.com/alisher-matkurbanov/ecommerce-user-service/internal/users"
 	"github.com/go-chi/chi/v5"
 	"log"
@@ -14,7 +14,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	logger := infra.NewLogger()
+	logger := instruments.NewLogger()
 	userRepo := users.NewRepository(cfg, logger)
 	userService := users.NewService(cfg, logger, userRepo)
 	httpUserController := users.NewHttpController(cfg, logger, userService)
