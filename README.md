@@ -1,7 +1,10 @@
 # ecommerce-user-service
 
 ## Todo
-- [ ] Add basic app skeleton - logging, config, service structure
+- [x] Add basic app skeleton - logging, config, service structure
+- [ ] Implement service
+- [ ] Add database and implement repository
+- [ ] Add graceful shutdown
 - [ ] Add database and migrations
 - [ ] Add docker-compose
 - [ ] Add testing
