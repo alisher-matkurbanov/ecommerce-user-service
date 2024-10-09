@@ -6,3 +6,4 @@
 - [ ] Add docker-compose
 - [ ] Add testing
 - [ ] Add metrics and grafana
+- [ ] Add stacktraces to logs
