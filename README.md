@@ -6,6 +6,8 @@
 - [ ] Add database and implement repository
 - [ ] Add graceful shutdown
 - [ ] Add database and migrations
+- [x] Add dockerfile
+- [ ] Reduce docker image size
 - [ ] Add docker-compose
 - [ ] Add testing
 - [ ] Add metrics and grafana
