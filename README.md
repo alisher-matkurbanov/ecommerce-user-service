@@ -1,4 +1,7 @@
 # ecommerce-user-service
+###  WIP
+TLDR: User management service
+
 
 ## Todo
 - [x] Add basic app skeleton - logging, config, service structure
@@ -12,3 +15,4 @@
 - [ ] Add testing
 - [ ] Add metrics and grafana
 - [ ] Add stacktraces to logs
+- [ ] Write REAMDE
