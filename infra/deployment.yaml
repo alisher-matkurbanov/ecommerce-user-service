@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecommerce-user-service-deployment
+spec:
+  replicas: 2  # Number of pod replicas
+  selector:
+    matchLabels:
+      app: ecommerce-user-service
+  template:
+    metadata:
+      labels:
+        app: ecommerce-user-service
+    spec:
+      containers:
+        - name: ecommerce-user-service
+          image: ecommerce-user-service:latest  # The image we built inside Minikube
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80  # Replace with the port your API runs on
